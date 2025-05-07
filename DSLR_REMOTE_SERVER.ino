@@ -263,7 +263,6 @@ void handleSensor(int pin, bool inverted, bool &lastState, unsigned long &lastDe
   }
 }
 
-// Вернем предыдущую обработку сенсоров
 void checkSensor(int pin, bool inverted) {
   bool sensorState = digitalRead(pin);
   if(inverted) sensorState = !sensorState;
